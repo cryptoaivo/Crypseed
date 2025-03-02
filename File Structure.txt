@@ -1,0 +1,18 @@
+CrypKey/
+├── include/                  # Header files
+│   ├── bip39.h              # BIP-39 seed phrase logic
+│   ├── crypto.h             # Cryptographic functions (address derivation)
+│   ├── gpu_manager.h        # GPU detection and management
+│   └── utils.h              # Utility functions (parsing, etc.)
+├── src/                     # Source files
+│   ├── main.cpp            # Main program entry point
+│   ├── bip39.cpp           # BIP-39 implementation
+│   ├── crypto.cpp          # Address derivation logic
+│   ├── gpu_manager.cpp     # GPU handling
+│   └── utils.cpp           # Utility implementations
+├── kernels/                 # CUDA kernel files
+│   └── crack_kernel.cu     # GPU brute-force kernel
+├── resources/               # Static resources
+│   └── wordlist.txt        # BIP-39 2048-word list
+├── CMakeLists.txt          # Build configuration (optional)
+└── README.md               # Project documentation
